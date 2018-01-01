@@ -119,19 +119,22 @@
 		
 		function showPic(){
 		 var anchor = new ol.Feature({
-			geometry: new ol.geom.Point([113.3899279152,23.1268994117])
+			geometry: new ol.geom.Point([113.3899279152,23.093])
 		  });
 		  
 		  anchor.setStyle(new ol.style.Style({
 			text: new ol.style.Text({
 			  font: '10px sans-serif',
-			  text: '111',
+			  text: 'just',
 			  fill: new ol.style.Fill({
 				  color: 'red'
 			  })
 			}),
 			image: new ol.style.Icon({
 			  src: '../../resources/img/alipay.jpg',
+			  //src: 'D:/repository/git/novostation.github.io/resources/img/alipay.jpg',
+			  offset:[0,0],
+			  scale:1,
 			  anchor: [0.5, 1]
 			})
 		  }));
